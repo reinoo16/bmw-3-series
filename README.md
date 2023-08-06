@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# BMW 3 Series Sedan Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[BMW 3 Series Landing Page Live](https://bmw-3-series.vercel.app/)
 
 ## Available Scripts
 
