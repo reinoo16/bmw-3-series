@@ -1,0 +1,1383 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Prompt', sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --black: #1A1A1A;
+  --blue: #0066B1;
+}
+
+body {
+  background-color: var(--black);
+}
+
+/* toggle menu */
+
+.toggle-menu {
+  background-color: var(--black);
+  width: 40%;
+  height: 100vh;
+  z-index: 999;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  right: 0;
+  top: 0;
+  position: absolute;
+  gap: 1rem;
+}
+
+.toggle-menu i {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.container {
+  width: 85%;
+  position: relative;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+}
+
+.navbar img {
+  width: 65px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 4rem;
+  color: #fff;
+}
+
+.navbar ul li a {
+  color: #fff;
+}
+
+.navbar ul li:last-child {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar ul li i {
+  font-size: 1.8rem;
+}
+
+/* header section */
+
+.header-section {
+  padding-bottom: 3rem;
+}
+
+.header-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: absolute;
+}
+
+
+.header-texts h2 {
+  font-weight: 100;
+  letter-spacing: 10px;
+  color: var(--blue);
+}
+
+.header-texts p {
+  margin-top: 1.6rem;
+  width: 450px;
+}
+
+.header-img {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 50%;
+  background-image: url('../src/img/header-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* block */
+.block {
+  height: 100vh;
+}
+
+/* section */
+
+section {
+  padding: 3rem 0;
+}
+
+/* digital technology */
+
+.digital-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.digital h1 {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+}
+
+.digital-img {
+  width: 100%;
+  height: 700px;
+  background-image: url('../src/img/digital-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* digital cards */
+
+.digital-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.digital-cards div .card-img1 {
+  width: 600px;
+  height: 420px;
+  background-image: url('../src/img/kavisli-ekran.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.digital-cards div .card-img2 {
+  width: 600px;
+  height: 420px;
+  background-image: url('../src/img/head-up.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.digital-cards div h2 {
+  margin-top: 1rem;
+}
+
+.digital-cards div p {
+  width: 600px;
+  margin-top: 0.6rem;
+}
+
+/* exterior design */
+
+.exterior-design {
+  display: flex;
+  align-items: center;
+}
+
+.exterior-img {
+  height: 100vh;
+  width: 50%;
+  background-image: url('../src/img/BMW-MY24-3Series-Overview-Design-01-Desktop.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exterior-texts {
+  margin-left: 4rem;
+}
+
+.exterior-texts h1 {
+  width: 600px;
+}
+
+.exterior-texts p {
+  width: 500px;
+}
+
+/* exterior cards */
+
+.exterior-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.exterior-cards div .exterior-card-img1 {
+  width: 460px;
+  height: 280px;
+  background-image: url('../src/img/ön-tasarim.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.exterior-cards div .exterior-card-img2 {
+  width: 460px;
+  height: 280px;
+  background-image: url('../src/img/yan-tasarim.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.exterior-cards div .exterior-card-img3 {
+  width: 460px;
+  height: 280px;
+  background-image: url('../src/img/arka-tasarim.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.exterior-cards div h2 {
+  margin-top: 1rem;
+}
+
+.exterior-cards div p {
+  width: 450px;
+  margin-top: 0.6rem;
+}
+
+/* exterior panel */
+
+.exterior-panel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.panel-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 520px;
+  margin-right: 18rem;
+}
+
+.panel-texts .panel-title h2 {
+  color: var(--blue);
+  letter-spacing: 10px;
+  margin-top: 0.4rem;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.colors img {
+  width: 90px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.colors img:hover {
+  transform: translateY(-1.4rem) rotate(45deg);
+}
+
+.exterior-panel-img {
+  width: 50%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* interior design */
+
+.interior-design {
+  display: flex;
+  align-items: center;
+}
+
+.interior-design .interior-img {
+  width: 50%;
+  height: 100vh;
+  background-image: url('../src/img/ic-tasarim.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.interior-design .interior-texts {
+  margin-left: 4rem;
+}
+
+.interior-texts h1 {
+  width: 600px;
+}
+
+.interior-texts p {
+  width: 500px;
+}
+
+.interior-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.interior-cards div .interior-card-img1 {
+  width: 460px;
+  height: 280px;
+  background-image: url('../src/img/interior1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  ;
+}
+
+.interior-cards div .interior-card-img2 {
+  width: 460px;
+  height: 280px;
+  background-image: url('../src/img/interior2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  ;
+}
+
+.interior-cards div .interior-card-img3 {
+  width: 460px;
+  height: 280px;
+  background-image: url('../src/img/interior3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  ;
+}
+
+.interior-cards div h2 {
+  margin-top: 1rem;
+}
+
+.interior-cards div p {
+  width: 450px;
+  margin-top: 0.6rem;
+}
+
+.interior-panel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.interior-panel-img {
+  width: 50%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center 0px 30px;
+  background-size: cover;
+}
+
+/* individual */
+
+.individual-title h1 {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.individual-img {
+  width: 100%;
+  height: 700px;
+  background-image: url('../src/img/individual-img.jpg');
+  background-position: center -150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4rem;
+}
+
+/* technical links */
+
+.technical-title {
+  width: 700px;
+}
+
+.technical {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.technical .technical-img {
+  width: 50%;
+  height: 500px;
+  background-image: url('../src/img/technical-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.technical .technical-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.technical-texts div h2:nth-child(2) {
+  color: var(--blue);
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  width: 100%;
+  margin: 3rem auto;
+}
+
+.footer-title img {
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 500px) {
+
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  /* header */
+  .navbar img {
+    width: 40px;
+  }
+
+  .navbar ul li:not(:last-child) {
+    display: none;
+  }
+
+  .navbar ul li:last-child {
+    display: inline-block;
+  }
+
+  .header-img {
+    width: 100%;
+    opacity: 0.2;
+  }
+
+  .header-texts {
+    z-index: 10;
+    text-align: center;
+  }
+
+  .header-texts p {
+    width: 100%;
+  }
+
+  /* technology */
+
+  .digital h1 {
+    width: 100%;
+  }
+
+  .digital-img {
+    height: 300px;
+    background-position: -80px;
+  }
+
+  .digital-cards {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .digital-cards div .card-img1,
+  .digital-cards div .card-img2 {
+    width: 100%;
+    height: 250px;
+  }
+
+  .digital-cards div p {
+    width: 100%;
+  }
+
+  /* design */
+
+  .exterior-design {
+    flex-direction: column;
+  }
+
+  .exterior-img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .exterior-texts {
+    margin: 0;
+  }
+
+  .exterior-texts h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .exterior-texts p {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .exterior-cards {
+    flex-direction: column;
+  }
+
+  .exterior-cards div .exterior-card-img1,
+  .exterior-cards div .exterior-card-img2,
+  .exterior-cards div .exterior-card-img3 {
+    width: 100%;
+    height: 180px;
+  }
+
+  .exterior-cards div {
+    margin-top: 3rem;
+  }
+
+  .exterior-cards div p {
+    width: 100%;
+  }
+
+  /* exterior colors */
+  .exterior-panel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .panel-texts {
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .colors {
+    justify-content: center;
+  }
+
+  .colors img {
+    width: 60px;
+  }
+
+  .exterior-panel-img {
+    width: 100%;
+    height: 300px;
+    margin-top: 3rem;
+  }
+
+  /* interior */
+
+  .interior-design {
+    flex-direction: column;
+  }
+
+  .interior-design .interior-img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .interior-design .interior-texts {
+    margin: 0;
+  }
+
+  .interior-design .interior-texts h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .interior-design .interior-texts p {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* interior cards */
+  .interior-cards {
+    flex-direction: column;
+  }
+
+  .interior-cards div .interior-card-img1,
+  .interior-cards div .interior-card-img2,
+  .interior-cards div .interior-card-img3 {
+    width: 100%;
+    height: 180px;
+  }
+
+  .interior-cards div {
+    margin-top: 3rem;
+  }
+
+  .interior-cards div p {
+    width: 100%;
+  }
+
+  /* interior panel */
+
+  .interior-panel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .interior-panel-img {
+    width: 100%;
+    height: 300px;
+    margin-top: 3rem;
+  }
+
+  /* individual */
+
+  .individual-title h1 {
+    width: 100%;
+  }
+
+  .individual-img {
+    width: 100%;
+    height: 300px;
+    background-position: -80px;
+  }
+
+  /* technical */
+
+  .technical-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .technical {
+    flex-direction: column;
+  }
+
+  .technical .technical-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .technical-texts {
+    text-align: center;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+
+  html {
+    font-size: 13px;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  /* header */
+  .navbar img {
+    width: 50px;
+  }
+
+  .navbar ul li:not(:last-child) {
+    display: none;
+  }
+
+  .navbar ul li:last-child {
+    display: inline-block;
+  }
+
+  .header-img {
+    width: 100%;
+    opacity: 0.2;
+  }
+
+  .header-texts {
+    z-index: 10;
+    text-align: center;
+  }
+
+  .header-texts p {
+    width: 100%;
+  }
+
+  /* technology */
+
+  .digital h1 {
+    width: 100%;
+  }
+
+  .digital-img {
+    height: 400px;
+    background-position: -80px;
+    width: 100%;
+  }
+
+  .digital-cards {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .digital-cards div .card-img1,
+  .digital-cards div .card-img2 {
+    width: 100%;
+    height: 350px;
+  }
+
+  .digital-cards div p {
+    width: 100%;
+  }
+
+  /* design */
+
+  .exterior-design {
+    flex-direction: column;
+  }
+
+  .exterior-img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .exterior-texts {
+    margin: 0;
+  }
+
+  .exterior-texts h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .exterior-texts p {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .exterior-cards {
+    flex-direction: column;
+  }
+
+  .exterior-cards div .exterior-card-img1,
+  .exterior-cards div .exterior-card-img2,
+  .exterior-cards div .exterior-card-img3 {
+    width: 100%;
+    height: 280px;
+  }
+
+  .exterior-cards div {
+    margin-top: 3rem;
+  }
+
+  .exterior-cards div p {
+    width: 100%;
+  }
+
+  /* exterior colors */
+  .exterior-panel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .panel-texts {
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .colors {
+    justify-content: center;
+    width: 400px;
+  }
+
+  .colors img {
+    width: 60px;
+  }
+
+  .exterior-panel-img {
+    width: 100%;
+    height: 400px;
+    margin-top: 3rem;
+  }
+
+  /* interior */
+
+  .interior-design {
+    flex-direction: column;
+  }
+
+  .interior-design .interior-img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .interior-design .interior-texts {
+    margin: 0;
+  }
+
+  .interior-design .interior-texts h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .interior-design .interior-texts p {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* interior cards */
+  .interior-cards {
+    flex-direction: column;
+  }
+
+  .interior-cards div .interior-card-img1,
+  .interior-cards div .interior-card-img2,
+  .interior-cards div .interior-card-img3 {
+    width: 100%;
+    height: 280px;
+  }
+
+  .interior-cards div {
+    margin-top: 3rem;
+  }
+
+  .interior-cards div p {
+    width: 100%;
+  }
+
+  /* interior panel */
+
+  .interior-panel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .interior-panel-img {
+    width: 100%;
+    height: 400px;
+    margin-top: 3rem;
+  }
+
+  /* individual */
+
+  .individual-title h1 {
+    width: 100%;
+  }
+
+  .individual-img {
+    width: 100%;
+    height: 400px;
+    background-position: -80px;
+  }
+
+  /* technical */
+
+  .technical-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .technical {
+    flex-direction: column;
+  }
+
+  .technical .technical-img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .technical-texts {
+    text-align: center;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    width: 75%;
+  }
+
+  /* header */
+  .navbar img {
+    width: 50px;
+  }
+
+  .header-img {
+    width: 100%;
+    opacity: 0.2;
+  }
+
+  .header-texts {
+    z-index: 10;
+    text-align: center;
+  }
+
+  .header-texts p {
+    width: 100%;
+  }
+
+  /* technology */
+
+  .digital h1 {
+    width: 700px;
+  }
+
+  .digital-img {
+    height: 450px;
+    background-position: 0px;
+    width: 100%;
+  }
+
+  .digital-cards {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .digital-cards div {
+    width: 550px;
+  }
+
+  .digital-cards div .card-img1,
+  .digital-cards div .card-img2 {
+    width: 100%;
+    height: 350px;
+  }
+
+  .digital-cards div p {
+    width: 100%;
+  }
+
+  /* design */
+
+  .exterior-design {
+    flex-direction: column;
+  }
+
+  .exterior-img {
+    width: 100%;
+    height: 450px;
+  }
+
+  .exterior-texts {
+    margin: 0;
+  }
+
+  .exterior-texts h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .exterior-texts p {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .exterior-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exterior-cards div .exterior-card-img1,
+  .exterior-cards div .exterior-card-img2,
+  .exterior-cards div .exterior-card-img3 {
+    width: 100%;
+    height: 320px;
+  }
+
+  .exterior-cards div {
+    width: 650px;
+    margin-top: 3rem;
+  }
+
+  .exterior-cards div p {
+    width: 100%;
+  }
+
+  /* exterior colors */
+  .exterior-panel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .panel-texts {
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .colors {
+    justify-content: center;
+    width: 400px;
+  }
+
+  .colors img {
+    width: 70px;
+  }
+
+  .exterior-panel-img {
+    width: 100%;
+    height: 400px;
+    margin-top: 3rem;
+  }
+
+  /* interior */
+
+  .interior-design {
+    flex-direction: column;
+  }
+
+  .interior-design .interior-img {
+    width: 100%;
+    height: 450px;
+  }
+
+  .interior-design .interior-texts {
+    margin: 0;
+  }
+
+  .interior-design .interior-texts h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .interior-design .interior-texts p {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* interior cards */
+  .interior-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .interior-cards div {
+    width: 650px;
+  }
+
+  .interior-cards div .interior-card-img1,
+  .interior-cards div .interior-card-img2,
+  .interior-cards div .interior-card-img3 {
+    width: 100%;
+    height: 350px;
+  }
+
+  .interior-cards div {
+    margin-top: 3rem;
+  }
+
+  .interior-cards div p {
+    width: 100%;
+  }
+
+  /* interior panel */
+
+  .interior-panel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .interior-panel-img {
+    width: 100%;
+    height: 450px;
+    margin-top: 3rem;
+  }
+
+  /* individual */
+
+  .individual-title h1 {
+    width: 700px;
+  }
+
+  .individual-img {
+    width: 100%;
+    height: 450px;
+    background-position: 0px;
+  }
+
+  /* technical */
+
+  .technical-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .technical {
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .technical .technical-img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .technical-texts {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1650px) {
+
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  /* header */
+  .navbar img {
+    width: 50px;
+  }
+
+  .header-img {
+    width: 100%;
+    opacity: 0.2;
+  }
+
+  .header-texts {
+    z-index: 10;
+    text-align: center;
+  }
+
+  .header-texts p {
+    width: 100%;
+  }
+
+  /* technology */
+
+  .digital h1 {
+    width: 700px;
+  }
+
+  .digital-img {
+    height: 550px;
+    background-position: 0px;
+    width: 100%;
+  }
+
+  .digital-cards {
+    gap: 3rem;
+  }
+
+  .digital-cards div {
+    width: 550px;
+  }
+
+  .digital-cards div .card-img1,
+  .digital-cards div .card-img2 {
+    width: 100%;
+    height: 380px;
+  }
+
+  .digital-cards div p {
+    width: 100%;
+  }
+
+  /* design */
+
+  .exterior-img {
+    width: 70%;
+    height: 550px;
+  }
+
+  .exterior-texts {
+    margin: 0;
+  }
+
+  .exterior-texts h1 {
+    width: 100%;
+  }
+
+  .exterior-texts p {
+    width: 100%;
+  }
+
+  .exterior-cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .exterior-cards div .exterior-card-img1,
+  .exterior-cards div .exterior-card-img2,
+  .exterior-cards div .exterior-card-img3 {
+    width: 100%;
+    height: 320px;
+  }
+
+  .exterior-cards div {
+    width: 540px;
+    margin-top: 3rem;
+  }
+
+  .exterior-cards div p {
+    width: 100%;
+  }
+
+  /* exterior colors */
+
+  .exterior-panel {
+    justify-content: space-between;
+  }
+
+  .panel-texts {
+    margin: auto;
+  }
+
+  .colors {
+    width: 400px;
+  }
+
+  .colors img {
+    width: 70px;
+  }
+
+  .exterior-panel-img {
+    width: 50%;
+    height: 600px;
+    background-position: -200px;
+  }
+
+  /* interior */
+
+  .interior-design .interior-img {
+    width: 70%;
+    height: 550px;
+  }
+
+  .interior-design .interior-texts {
+    margin: 0;
+  }
+
+  .interior-design .interior-texts h1 {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .interior-design .interior-texts p {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* interior cards */
+  .interior-cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .interior-cards div {
+    width: 540px;
+  }
+
+  .interior-cards div .interior-card-img1,
+  .interior-cards div .interior-card-img2,
+  .interior-cards div .interior-card-img3 {
+    width: 100%;
+    height: 350px;
+  }
+
+  .interior-cards div {
+    margin-top: 3rem;
+  }
+
+  .interior-cards div p {
+    width: 100%;
+  }
+
+  /* interior panel */
+
+  .interior-panel-img {
+    width: 50%;
+    height: 550px;
+    margin-top: 3rem;
+  }
+
+  /* individual */
+
+  .individual-title h1 {
+    width: 700px;
+  }
+
+  .individual-img {
+    width: 100%;
+    height: 550px;
+    background-position: 0px;
+  }
+
+  /* technical */
+
+  .technical-title {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .technical {
+    justify-content: space-between;
+  }
+
+  .technical .technical-img {
+    width: 900px;
+    height: 400px;
+  }
+}
